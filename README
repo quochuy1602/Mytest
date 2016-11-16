@@ -1,1 +1,31 @@
-This is a git repo
+1 . install
+sudo apt-get install git
+2.config
+git config --global user.name "user_name"
+
+git config --global user.email "email_id"
+3.create forder
+  - git init Mytest
+  - cd Mytest
+  - gedit README
+4. add and commit
+  - git add README
+  - git commit -m "some_message"
+5. login web create repository
+git remote add origin https://github.com/user_name/Mytest.git
+
+6. push 
+   - git push origin master
+
+7. create brank
+  - git checkout -b feature_x
+  - return brank master : git checkout master
+  - delete brank : git branch -d feature_x
+  - push data to brank : git push origin feature_x
+8. merge brank to master
+   - git checkout feature_x  
+   - git pull origin master
+   - git checkout master
+   - git merge feature_x
+   - git push origin master
+9. done
